@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             panel2 = new Panel();
-            deleteNoteButton = new Button();
             addNoteButton = new Button();
+            deleteNoteButton = new Button();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -39,34 +39,34 @@
             panel2.AutoScroll = true;
             panel2.Controls.Add(addNoteButton);
             panel2.Controls.Add(deleteNoteButton);
-            panel2.Location = new Point(2, 66);
+            panel2.Location = new Point(2, 63);
             panel2.Name = "panel2";
-            panel2.Size = new Size(682, 377);
+            panel2.Size = new Size(682, 380);
             panel2.TabIndex = 4;
-            // 
-            // deleteNoteButton
-            // 
-            deleteNoteButton.BackgroundImage = Properties.Resources.delete_icon;
-            deleteNoteButton.BackgroundImageLayout = ImageLayout.Zoom;
-            deleteNoteButton.Cursor = Cursors.Hand;
-            deleteNoteButton.Location = new Point(581, 3);
-            deleteNoteButton.Name = "deleteNoteButton";
-            deleteNoteButton.Size = new Size(50, 50);
-            deleteNoteButton.TabIndex = 1;
-            deleteNoteButton.UseVisualStyleBackColor = false;
-            deleteNoteButton.Click += deleteNoteButton_Click;
             // 
             // addNoteButton
             // 
             addNoteButton.BackgroundImage = Properties.Resources.vector_add_icon;
             addNoteButton.BackgroundImageLayout = ImageLayout.Zoom;
             addNoteButton.Cursor = Cursors.Hand;
-            addNoteButton.Location = new Point(525, 3);
+            addNoteButton.Location = new Point(10, 3);
             addNoteButton.Name = "addNoteButton";
             addNoteButton.Size = new Size(50, 50);
             addNoteButton.TabIndex = 0;
             addNoteButton.UseVisualStyleBackColor = true;
             addNoteButton.Click += addNoteButton_Click;
+            // 
+            // deleteNoteButton
+            // 
+            deleteNoteButton.BackgroundImage = Properties.Resources.delete_icon;
+            deleteNoteButton.BackgroundImageLayout = ImageLayout.Zoom;
+            deleteNoteButton.Cursor = Cursors.Hand;
+            deleteNoteButton.Location = new Point(621, 3);
+            deleteNoteButton.Name = "deleteNoteButton";
+            deleteNoteButton.Size = new Size(50, 50);
+            deleteNoteButton.TabIndex = 1;
+            deleteNoteButton.UseVisualStyleBackColor = false;
+            deleteNoteButton.Click += deleteNoteButton_Click;
             // 
             // Form1
             // 
