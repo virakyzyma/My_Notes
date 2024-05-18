@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             panel2 = new Panel();
-            addNoteButton = new Button();
+            AddNoteButton = new Button();
             deleteNoteButton = new Button();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -37,24 +37,24 @@
             // panel2
             // 
             panel2.AutoScroll = true;
-            panel2.Controls.Add(addNoteButton);
+            panel2.Controls.Add(AddNoteButton);
             panel2.Controls.Add(deleteNoteButton);
             panel2.Location = new Point(2, 63);
             panel2.Name = "panel2";
             panel2.Size = new Size(682, 380);
             panel2.TabIndex = 4;
             // 
-            // addNoteButton
+            // AddNoteButton
             // 
-            addNoteButton.BackgroundImage = Properties.Resources.vector_add_icon;
-            addNoteButton.BackgroundImageLayout = ImageLayout.Zoom;
-            addNoteButton.Cursor = Cursors.Hand;
-            addNoteButton.Location = new Point(10, 3);
-            addNoteButton.Name = "addNoteButton";
-            addNoteButton.Size = new Size(50, 50);
-            addNoteButton.TabIndex = 0;
-            addNoteButton.UseVisualStyleBackColor = true;
-            addNoteButton.Click += addNoteButton_Click;
+            AddNoteButton.BackgroundImage = Properties.Resources.vector_add_icon;
+            AddNoteButton.BackgroundImageLayout = ImageLayout.Zoom;
+            AddNoteButton.Cursor = Cursors.Hand;
+            AddNoteButton.Location = new Point(10, 3);
+            AddNoteButton.Name = "AddNoteButton";
+            AddNoteButton.Size = new Size(50, 50);
+            AddNoteButton.TabIndex = 0;
+            AddNoteButton.UseVisualStyleBackColor = true;
+            AddNoteButton.Click += AddNewNoteButton_Click;
             // 
             // deleteNoteButton
             // 
@@ -85,6 +85,6 @@
         #endregion
         private Panel panel2;
         private Button deleteNoteButton;
-        private Button addNoteButton;
+        private Button AddNoteButton;
     }
 }
