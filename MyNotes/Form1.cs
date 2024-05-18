@@ -69,18 +69,14 @@ namespace MyNotes
 
                         if (description.Visible)
                         {
-                            panel.BackColor = Color.FromArgb(45, 160, 252);
                             panel.Size = new Size(ClientSize.Width, panel.Controls[0].Height + description.Height + 30);
-                            if (lastExpandedPanel != null)
-                            {
+                            if (lastExpandedPanel != null) {
                                 lastExpandedPanel.BackColor = Color.Yellow;
                             }
                             lastExpandedPanel = panel;
                         }
                         else
                         {
-                            panel.BackColor = Color.Yellow;
-                            panel.Size = new Size(ClientSize.Width, panel.Controls[0].Height + 20);
                             if (lastExpandedPanel == panel)
                             {
                                 lastExpandedPanel = null;
@@ -109,7 +105,6 @@ namespace MyNotes
                     panel.BackColor = Color.FromArgb(39, 150, 223);
                     return;
                 }
-                panel.BackColor = Color.Transparent;
             }
         }
         private void AddNewNoteButton_Click(object sender, EventArgs e)
@@ -118,6 +113,7 @@ namespace MyNotes
             addNoteForm.Size = this.Size;
             addNoteForm.StartPosition = FormStartPosition.CenterParent;
             addNoteForm.Formm2 += AddNoteForm_AddNote;
+
             addNoteForm.ShowDialog();
         }
         private void AddNoteForm_AddNote(Note obj)
@@ -141,6 +137,7 @@ namespace MyNotes
         }
         private void panel2_Paint(object sender, PaintEventArgs e) { }
     }
+
     public class Note
     {
         public string Title { get; set; } = "";
